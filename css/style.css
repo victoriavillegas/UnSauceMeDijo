@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+/* Menú Redes Sociales */
+
+.menu2 {
+    position: fixed;
+    left: auto;
+    top: 16px;
+    right: 16px;
+    bottom: auto;
+    z-index: 20;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    list-style-type: none;
+    gap: 10px;
+}
+
+/* Encabezado */
+
+.encabezado {
+    display: flex;
+    justify-content: center;
+    background-image: url(../img/header.jpg);
+}
+
+.navegacion {
+    background-color: black;
+    font-family: 'Ubuntu', sans-serif;
+    padding-block: 5px;
+}
+
+/* .menu{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+    justify-content: space-around;
+} */
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: black;
+    font-size: 18px;
+}
+
+.menu > li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 2s;
+}
+
+.menu_item1:hover{
+    transform: scale(1.2);
+    background-color: darkgrey;
+}
+
+/* Títulos */
+
+.titulo{
+    color:black;
+    font-family: 'Ubuntu', sans-serif;
+    background-image: url(../img/header.jpg);
+    display: flex;
+    justify-content: flex-start;
+    font-size: 25px;
+    padding-left: 20px;
+    padding-block: 15px;
+}
+
+/* Para todas las listas con anchor, sacarle el subrayado y colorearlas de blanco*/
+
+li a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Navegación volver al index */
+
+.navegacion_inicio{
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-block: 10px;
+    font-size: 15px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.navegacion_inicio ul li{
+    list-style-type: none;
+}
+
+/* Navegación Videos */
+
+.navegacion_videos{
+    background-image: url(../img/header.jpg);
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    padding-block: 30px;
+}
+
+.menu_videos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    gap: 40px;
+}
+
+h3{
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding-block: 10px;
+}
+
+/* Pie de página */
+
+.footer{
+    background-color: black;
+    color:white;
+    font-family: 'Ubuntu', sans-serif;
+    padding-left: 20px;
+    padding-top: 10px;
+    background-image: url(../img/header.jpg);
+}
+
+.menu_footer{
+    list-style-type:none;
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    padding-block: 10px;
+    gap: 10px;
+}
+
+
+/* Nosotros */
+
+.nosotros_grid{
+    display: flex;
+    flex-direction: row;
+    padding: 10px 40px 30px 40px;
+    background-image: url(../img/header.jpg);
+}
+
+.nosotros_gallery{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(3, 2fr);
+    grid-column-gap: 20px;
+    grid-template-areas:
+    "nosotros_img1 descripcion1"
+    "descripcion2 nosotros_img2"
+    "nosotros_img3 descripcion3"
+}
+
+
+.descripcion1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    padding-top: 20px;
+    grid-area: descripcion1;
+}
+
+.descripcion2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    padding-top: 20px;
+    grid-area: descripcion2;
+    padding-left: 10px;
+}
+
+.descripcion3{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    padding-top: 20px;
+    grid-area: descripcion3;
+}
+
+.nosotros_img img1 {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: nosotros_img1;
+}
+
+.nosotros_img img2{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: nosotros_img2;
+}
+
+.nosotros_img img3{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: nosotros_img3;
+}
+
+.nosotros_gallery .nosotros_img img{
+    border-radius: 5px;
+    width: 500px;
+    height: 300px;
+}
+
+/* Galería página de inicio */
+
+.container{
+    width: 100%;
+    display: flex;
+    padding-block: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/header.jpg);
+}
+
+.grid_gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 5fr);
+    grid-template-rows: repeat(3, 5fr);
+    gap: 10px;
+}
+
+.grid_gallery .img-box{
+    position: relative;
+}
+
+.grid_gallery .img-box img{
+    border-radius: 5px;
+    width: 200px;
+    height: 200px;
+    opacity: 0.7;
+}
+
+.img-box img:hover{
+    transform: scale(1.1) translateY(5px);
+    opacity: 1;
+}
+
+/* Reproductor Canciones */
+
+.caja_canciones{
+    display:flex;
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    width: 100%;
+    height: 240px;
+}
+
+/* Página contacto */
+
+.ccontacto{
+    list-style-type: none;
+    font-family: 'Ubuntu', sans-serif;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    background-image: url(../img/header.jpg);
+    font-size: 18px;
+}
+
+.ccontacto ul li{
+    list-style-type: none;
+}
+
+/* Habilitar viewport y aplicación de media querie */
+
+    /* Aplicación para tablet*/
+
+
+@media screen and (max-width: 768px){
+
+    .container{
+        width: 100%;
+        display: flex;
+        padding-block: 20px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url(../img/header.jpg);
+    }
+
+    .grid_gallery .img-box img{
+        border-radius: 5px;
+        width: 140px;
+        height: 140px;
+    }
+
+    
+    .nosotros_gallery{
+        display: grid;
+        grid-template-columns: 100%;
+        justify-content: center;
+        grid-template-rows: repeat(6, 0.2fr);
+        grid-template-areas:
+        "nosotros_img1"
+        "descripcion1"
+        "nosotros_img2"
+        "descripcion2"
+        "nosotros_img3"
+        "descripcion3"
+    }
+
+    .nosotros_gallery .nosotros_img img{
+        border-radius: 5px;
+        width: 400px;
+        height: 250px;
+        display:flex;
+    }
+    
+    .menu_videos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+        gap: 40px;
+    }
+}
+
+    /* Aplicación para teléfono */
+
+@media screen and (max-width: 480px){
+    .menu2 {
+        position: fixed;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        list-style-type: none;
+        gap: 5px;
+    }
+
+    .menu > li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+    }
+
+    .grid_gallery{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 5fr);
+        gap: 10px;
+        grid-template-areas:
+        "box1"
+        "box2"
+        "box3"
+        "box4"
+        "box5"
+        "box6"
+    }
+
+    
+    .grid_gallery .img-box img{
+        border-radius: 5px;
+        width: 300px;
+        height: 300px;
+    }
+
+
+    .img-box box1{
+        grid-area: box1;
+    }
+
+    .img-box box2{
+        grid-area: box2;
+    }
+
+    .img-box box3{
+        grid-area: box3;
+    }
+
+    .img-box box4{
+        grid-area: box4;
+    }
+
+    .img-box box5{
+        grid-area: box5;
+    }
+
+    .img-box box6{
+        grid-area: box6;
+    }
+
+    .nosotros_gallery{
+        display: grid;
+        grid-template-columns: 100%;
+        justify-content: center;
+        grid-template-rows: repeat(6, 0.2fr);
+        grid-template-areas:
+        "nosotros_img1"
+        "descripcion1"
+        "nosotros_img2"
+        "descripcion2"
+        "nosotros_img3"
+        "descripcion3"
+    }
+
+    .nosotros_gallery .nosotros_img img{
+        border-radius: 5px;
+        width: 300px;
+        height: 180px;
+        display:flex;
+    }
+
+}
