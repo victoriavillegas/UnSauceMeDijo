@@ -56,12 +56,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: background-color 2s;
-}
-
-.menu_item1:hover{
-    transform: scale(1.2);
-    background-color: darkgrey;
 }
 
 /* Títulos */
