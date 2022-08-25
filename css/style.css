@@ -56,6 +56,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: background-color 2s;
+}
+
+.menu_item1:hover{
+    transform: scale(1.2);
+    background-color: darkgrey;
 }
 
 /* Títulos */
@@ -270,6 +276,10 @@ h3{
 
 .ccontacto ul li{
     list-style-type: none;
+}
+
+.row mt-5 {
+    padding: 20px;
 }
 
 /* Habilitar viewport y aplicación de media querie */
