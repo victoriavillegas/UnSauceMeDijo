@@ -6,6 +6,10 @@
     box-sizing:border-box;
 }
 
+*::selection{
+    background-color: black;
+    color: white;
+}
 
 /* Menú Redes Sociales */
 
@@ -21,6 +25,10 @@
     align-items: flex-end;
     list-style-type: none;
     gap: 10px;
+}
+
+.menu__item2 a:hover{
+
 }
 
 /* Encabezado */
@@ -124,6 +132,7 @@ h3{
     color: white;
     background-color: black;
     padding-block: 10px;
+    margin: 0;
 }
 
 /* Pie de página */
@@ -278,8 +287,15 @@ h3{
     list-style-type: none;
 }
 
-.row mt-5 {
-    padding: 20px;
+.titulo-contacto{
+    background-color: grey;
+    font-size: 25px;
+    padding-left: 10px;
+}
+
+.formulario{
+    padding: 0 10px 10px 10px;
+    background-image: url(../img/header.jpg);
 }
 
 /* Habilitar viewport y aplicación de media querie */
