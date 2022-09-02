@@ -1,0 +1,33 @@
+.menu2 {
+    position: fixed;
+    left: auto;
+    top: 16px;
+    right: 16px;
+    bottom: auto;
+    z-index: 20;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    list-style-type: none;
+    gap: 10px;
+
+    
+    .menu__item2:hover{
+        transform: scale(1.2);
+        background-color: darkgrey;
+    }
+
+    li a{
+    text-decoration: none;
+    color: $secondaryColor;
+    }
+
+
+}
+
+.encabezado {
+    display: flex;
+    justify-content: center;
+    background-image: url(../img/header.jpg);
+}
+
