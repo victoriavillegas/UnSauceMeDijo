@@ -1,0 +1,101 @@
+/* Encabezado */
+.menu2 {
+  position: fixed;
+  left: auto;
+  top: 16px;
+  right: 16px;
+  bottom: auto;
+  z-index: 20;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  list-style-type: none;
+  gap: 10px;
+}
+.menu2 .menu__item2:hover {
+  -webkit-animation: slide-top 6s ease-out both;
+  animation: slide-top 0.6s ease-out both;
+  background-color: darkgrey;
+}
+.menu2 li a {
+  text-decoration: none;
+  color: white;
+}
+
+h3 {
+  font-family: "Ubuntu", sans-serif;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  background-color: black;
+  padding-block: 10px;
+  margin: 0;
+}
+
+.encabezado {
+  display: flex;
+  justify-content: center;
+  background-image: url(../img/header.jpg);
+}
+
+.navegacion_inicio {
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-block: 10px;
+  font-size: 15px;
+  font-family: "Ubuntu", sans-serif;
+}
+.navegacion_inicio ul li {
+  list-style-type: none;
+}
+.navegacion_inicio ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.slide-top {
+  -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.ccontacto {
+  list-style-type: none;
+  font-family: "Ubuntu", sans-serif;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  background-image: url(../img/header.jpg);
+  font-size: 18px;
+}
+.ccontacto ul li {
+  list-style-type: none;
+}
+
+.titulo-contacto {
+  background-color: grey;
+  font-size: 25px;
+  padding-left: 20px;
+}
+
+.formulario {
+  padding: 0 10px 10px 20px;
+  background-image: url(../img/header.jpg);
+}
+
+footer {
+  background-color: black;
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+  padding-left: 20px;
+  padding-top: 10px;
+  background-image: url(../img/header.jpg);
+}
+footer .menu_footer {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-block: 10px;
+  gap: 30px;
+}/*# sourceMappingURL=contacto.css.map */
