@@ -1,6 +1,5 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -8,11 +7,7 @@
   font-family: "Ubuntu", sans-serif;
 }
 
-*::selection{
-  background-color: black;
-  color: white;
-}
-
+/* Encabezado */
 .menu2 {
   position: fixed;
   left: auto;
@@ -52,80 +47,11 @@
   animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
-.fa-youtube, .fa-instagram, .fa-spotify {
-  background-color: red;
-}
-
-.fa-spotify {
-  background-color: green;
-}
-
-.fa.instagram {
-  background-color: rgb(245, 60, 146);
-}
-
-.navegacion_inicio {
-  background-color: black;
-  color: white;
-  padding-left: 20px;
-  padding-block: 10px;
-  font-size: 15px;
-  font-family: "Ubuntu", sans-serif;
-}
-.navegacion_inicio ul li {
-  list-style-type: none;
-}
-
-footer {
-  background-color: black;
-  color: white;
-  font-family: "Ubuntu", sans-serif;
-  padding-left: 20px;
-  padding-top: 10px;
+/* Body */
+body {
   background-image: url(../img/header.jpg);
 }
-footer .menu_footer {
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  padding-block: 10px;
-  gap: 30px;
-}
 
-.fa-youtube, .fa-instagram, .fa-spotify {
-  background-color: red;
-}
-
-.fa-spotify {
-  background-color: green;
-}
-
-.fa-instagram {
-  background-color: pink;
-}
-
-.fa-youtube, .fa-instagram, .fa-spotify {
-  background-color: red;
-}
-
-.fa-spotify {
-  background-color: green;
-}
-
-.fa-instagram {
-  background-color: pink;
-}
-
-.fa-youtube, .fa-instagram, .fa-spotify {
-  width: 30px;
-  border-radius: 5px;
-}
-.fa-youtube:hover, .fa-instagram:hover, .fa-spotify:hover {
-  background-color: grey;
-}
-
-/* Body */
 .container {
   width: 100%;
   display: flex;
@@ -134,6 +60,7 @@ footer .menu_footer {
   justify-content: center;
   align-items: center;
   background-image: url(../img/header.jpg);
+  margin: 0;
 }
 .container .grid_gallery {
   display: grid;
@@ -161,11 +88,10 @@ footer .menu_footer {
 }
 
 .container {
-  @include flex(column, center, center);
-}
-
-.img-box .box1 {
-  background-color: pink;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Pie */
@@ -179,6 +105,10 @@ footer .menu_footer {
 }
 .navegacion_inicio ul li {
   list-style-type: none;
+}
+.navegacion_inicio ul li a {
+  text-decoration: none;
+  color: white;
 }
 
 footer {
@@ -198,34 +128,592 @@ footer .menu_footer {
   gap: 30px;
 }
 
-.fa-youtube, .fa-spotify, .fa-instagram {
-  background-color: red;
+/* Encabezado */
+.menu2 {
+  position: fixed;
+  left: auto;
+  top: 16px;
+  right: 16px;
+  bottom: auto;
+  z-index: 20;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  list-style-type: none;
+  gap: 10px;
+}
+.menu2 .menu__item2:hover {
+  -webkit-animation: slide-top 6s ease-out both;
+  animation: slide-top 0.6s ease-out both;
+  background-color: darkgrey;
+}
+.menu2 li a {
+  text-decoration: none;
+  color: white;
 }
 
-.fa-spotify {
-  background-color: green;
+.encabezado {
+  display: flex;
+  justify-content: center;
+  background-image: url(../img/header.jpg);
 }
 
-.fa-instagram {
-  background-color: pink;
+.navegación_inicio li a {
+  text-decoration: none;
+  color: white;
 }
 
-.fa-youtube, .fa-spotify, .fa-instagram {
-  background-color: red;
+h3 {
+  font-family: "Ubuntu", sans-serif;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  background-color: black;
+  padding-block: 10px;
+  margin: 0;
 }
 
-.fa-spotify {
-  background-color: green;
+.titulo {
+  color: black;
+  font-family: "Ubuntu", sans-serif;
+  background-image: url(../img/header.jpg);
+  display: flex;
+  justify-content: flex-start;
+  font-size: 25px;
+  padding-left: 20px;
+  padding-block: 15px;
 }
 
-.fa-instagram {
-  background-color: pink;
+.slide-top {
+  -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
-.fa-youtube, .fa-spotify, .fa-instagram {
-  width: 30px;
-  border-radius: 5px;
+.caja_canciones {
+  display: flex;
+  text-align: center;
+  padding: 20px;
+  background-color: black;
+  width: 100%;
+  height: 240px;
 }
-.fa-youtube:hover, .fa-spotify:hover, .fa-instagram:hover {
+
+footer {
+  background-color: black;
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+  padding-left: 20px;
+  padding-top: 10px;
+  background-image: url(../img/header.jpg);
+}
+footer .menu_footer {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-block: 10px;
+  gap: 30px;
+}
+
+/* Encabezado */
+.menu2 {
+  position: fixed;
+  left: auto;
+  top: 16px;
+  right: 16px;
+  bottom: auto;
+  z-index: 20;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  list-style-type: none;
+  gap: 10px;
+}
+.menu2 .menu__item2:hover {
+  -webkit-animation: slide-top 6s ease-out both;
+  animation: slide-top 0.6s ease-out both;
+  background-color: darkgrey;
+}
+.menu2 li a {
+  text-decoration: none;
+  color: white;
+}
+
+h3 {
+  font-family: "Ubuntu", sans-serif;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  background-color: black;
+  padding-block: 10px;
+  margin: 0;
+}
+
+.encabezado {
+  display: flex;
+  justify-content: center;
+  background-image: url(../img/header.jpg);
+}
+
+.navegacion_inicio {
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-block: 10px;
+  font-size: 15px;
+  font-family: "Ubuntu", sans-serif;
+}
+.navegacion_inicio ul li {
+  list-style-type: none;
+}
+.navegacion_inicio ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.slide-top {
+  -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.ccontacto {
+  list-style-type: none;
+  font-family: "Ubuntu", sans-serif;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  background-image: url(../img/header.jpg);
+  font-size: 18px;
+}
+.ccontacto ul li {
+  list-style-type: none;
+}
+
+.titulo-contacto {
   background-color: grey;
-}/*# sourceMappingURL=estilo.css.map */
+  font-size: 25px;
+  padding-left: 20px;
+}
+
+.formulario {
+  padding: 0 10px 10px 20px;
+  background-image: url(../img/header.jpg);
+}
+
+footer {
+  background-color: black;
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+  padding-left: 20px;
+  padding-top: 10px;
+  background-image: url(../img/header.jpg);
+}
+footer .menu_footer {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-block: 10px;
+  gap: 30px;
+}
+
+/* Encabezado */
+.menu2 {
+  position: fixed;
+  left: auto;
+  top: 16px;
+  right: 16px;
+  bottom: auto;
+  z-index: 20;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  list-style-type: none;
+  gap: 10px;
+}
+.menu2 .menu__item2:hover {
+  -webkit-animation: slide-top 6s ease-out both;
+  animation: slide-top 0.6s ease-out both;
+  background-color: darkgrey;
+}
+.menu2 li a {
+  text-decoration: none;
+  color: white;
+}
+
+h3 {
+  font-family: "Ubuntu", sans-serif;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  background-color: black;
+  padding-block: 10px;
+  margin: 0;
+}
+
+.encabezado {
+  display: flex;
+  justify-content: center;
+  background-image: url(../img/header.jpg);
+}
+
+.navegación_inicio li a {
+  text-decoration: none;
+  color: white;
+}
+
+.slide-top {
+  -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+/* Body */
+.titulo {
+  color: black;
+  font-family: "Ubuntu", sans-serif;
+  background-image: url(../img/header.jpg);
+  display: flex;
+  justify-content: flex-start;
+  font-size: 25px;
+  padding-left: 20px;
+  padding-block: 15px;
+}
+
+.nosotros_grid {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 40px 30px 40px;
+  background-image: url(../img/header.jpg);
+}
+.nosotros_grid .nosotros_gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-template-rows: repeat(3, 2fr);
+  grid-column-gap: 20px;
+  grid-template-areas: "nosotros_img1 descripcion1" "descripcion2 nosotros_img2" "nosotros_img3 descripcion3";
+}
+.nosotros_grid .nosotros_gallery .descripcion1 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 15px;
+  padding-top: 20px;
+  grid-area: descripcion1;
+}
+.nosotros_grid .nosotros_gallery .descripcion2 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 15px;
+  padding-top: 20px;
+  grid-area: descripcion2;
+  padding-left: 10px;
+}
+.nosotros_grid .nosotros_gallery .descripcion3 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 15px;
+  padding-top: 20px;
+  grid-area: descripcion3;
+}
+.nosotros_grid .nosotros_gallery .nosotros_img img1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: nosotros_img1;
+}
+.nosotros_grid .nosotros_gallery .nosotros_img img2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: nosotros_img2;
+}
+.nosotros_grid .nosotros_gallery .nosotros_img img3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: nosotros_img3;
+}
+.nosotros_grid .nosotros_gallery .nosotros_img img {
+  border-radius: 5px;
+  width: 500px;
+  height: 300px;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+  padding-left: 20px;
+  padding-top: 10px;
+  background-image: url(../img/header.jpg);
+}
+footer .menu_footer {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-block: 10px;
+  gap: 30px;
+}
+
+
+/* Encabezado */
+.menu2 {
+  position: fixed;
+  left: auto;
+  top: 16px;
+  right: 16px;
+  bottom: auto;
+  z-index: 20;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  list-style-type: none;
+  gap: 10px;
+}
+.menu2 .menu__item2:hover {
+  -webkit-animation: slide-top 6s ease-out both;
+  animation: slide-top 0.6s ease-out both;
+  background-color: darkgrey;
+}
+.menu2 li a {
+  text-decoration: none;
+  color: white;
+}
+
+.titulo {
+  color: black;
+  font-family: "Ubuntu", sans-serif;
+  background-image: url(../img/header.jpg);
+  display: flex;
+  justify-content: flex-start;
+  font-size: 25px;
+  padding-left: 20px;
+  padding-block: 15px;
+}
+
+.encabezado {
+  display: flex;
+  justify-content: center;
+  background-image: url(../img/header.jpg);
+}
+
+.navegación_inicio li a {
+  text-decoration: none;
+  color: white;
+}
+
+.slide-top {
+  -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.navegacion_videos {
+  background-image: url(../img/header.jpg);
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+  padding-block: 30px;
+}
+.navegacion_videos .menu_videos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  gap: 40px;
+}
+
+h3 {
+  font-family: "Ubuntu", sans-serif;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  background-color: black;
+  padding-block: 10px;
+  margin: 0;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+  padding-left: 20px;
+  padding-top: 10px;
+  background-image: url(../img/header.jpg);
+}
+footer .menu_footer {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-block: 10px;
+  gap: 30px;
+}
+
+/* Habilitar viewport y aplicación de media querie */
+/* Aplicación para tablet*/
+
+@media screen and (max-width: 768px) {
+
+  .menu2 {
+    width: 100px;
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    list-style-type: none;
+    gap: 5px;
+  }
+   
+  .encabezado {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      background-image: url(../img/header.jpg);
+  }
+
+  .container {
+    width: 100%;
+    display: flex;
+    padding-block: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/header.jpg);
+  }
+
+  .grid_gallery .img-box img {
+    border-radius: 5px;
+    width: 140px;
+    height: 140px;
+  }
+  
+  .nosotros_grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nosotros_gallery {
+      display: grid;
+      grid-template-columns: 0.3fr;
+      justify-content: center;
+      grid-template-rows: repeat(6, 0.2fr);
+      grid-template-areas: 
+      "nosotros_img1" 
+      "descripcion1" 
+      "nosotros_img2" 
+      "descripcion2" 
+      "nosotros_img3" 
+      "descripcion3";
+    }
+
+  .nosotros_gallery .nosotros_img img {
+      border-radius: 5px;
+      width: 100px;
+      height: 50px;
+      display: flex;
+    }
+
+  .menu_videos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    gap: 40px;
+  }
+}
+
+
+/* Aplicación para teléfono */
+@media screen and (max-width: 480px) {
+  .menu2 {
+    width: 100px;
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    list-style-type: none;
+    gap: 5px;
+  }
+   
+  .navegacion_inicio {
+    width: 100px;
+  }
+
+  .encabezado {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      background-image: url(../img/header.jpg);
+  }
+
+  
+  .grid_gallery{
+    display: grid;
+    grid-template-columns: 0.5fr;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 5px;
+    grid-template-areas:
+    "box1"
+    "box2"
+    "box3"
+    "box4"
+    "box5"
+    "box6"
+  }
+
+  .grid_gallery .img-box img {
+    border-radius: 5px;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .img-box box1 {
+    grid-area: box1;
+  }
+  
+  .img-box box2 {
+    grid-area: box2;
+  }
+  
+  .img-box box3 {
+    grid-area: box3;
+  }
+  
+  .img-box box4 {
+    grid-area: box4;
+  }
+  
+  .img-box box5 {
+    grid-area: box5;
+  }
+  
+  .img-box box6 {
+    grid-area: box6;
+  }
+
+  .nosotros_gallery {
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: center;
+    grid-template-columns: 0.5fr;
+    grid-template-rows: repeat(6, 0.1fr);
+    grid-template-areas: 
+    "nosotros_img1" 
+    "descripcion1" 
+    "nosotros_img2" 
+    "descripcion2" 
+    "nosotros_img3" 
+    "descripcion3";
+  }
+  
+  .nosotros_gallery .nosotros_img img {
+    border-radius: 5px;
+    width: 200px;
+    height: 120px;
+    display: flex;
+  }
+
+}
+  
+
+/*# sourceMappingURL=estilo.css.map */

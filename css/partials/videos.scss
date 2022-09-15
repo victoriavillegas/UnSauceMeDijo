@@ -101,36 +101,3 @@ footer{
         gap: 30px;
     }
 }
-
-/* Habilitar viewport y aplicación de media querie */
-
-    /* Aplicación para tablet*/
-
-
-    @media screen and (max-width: 768px){
-
-        
-        .menu_videos{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            list-style-type: none;
-            gap: 40px;
-        }
-    }
-    
-        /* Aplicación para teléfono */
-    
-    @media screen and (max-width: 480px){
-        .menu2 {
-            position: fixed;
-            display: flex;
-            justify-content: flex-end;
-            align-items: flex-end;
-            list-style-type: none;
-            gap: 5px;
-        }
-
-    }
-    
