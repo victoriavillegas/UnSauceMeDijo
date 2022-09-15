@@ -593,7 +593,7 @@ footer .menu_footer {
 
   .nosotros_gallery {
       display: grid;
-      grid-template-columns: 0.3fr;
+      grid-template-columns: 1fr;
       justify-content: center;
       grid-template-rows: repeat(6, 0.2fr);
       grid-template-areas: 
@@ -603,6 +603,58 @@ footer .menu_footer {
       "descripcion2" 
       "nosotros_img3" 
       "descripcion3";
+
+      
+        .descripcion1 {
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 15px;
+            padding-top: 20px;
+            grid-area: descripcion1;
+        }
+        
+        .descripcion2 {
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 15px;
+            padding-top: 20px;
+            grid-area: descripcion2;
+            padding-left: 10px;
+        }
+        
+        .descripcion3{
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 15px;
+            padding-top: 20px;
+            grid-area: descripcion3;
+        }
+        
+        .nosotros_img {
+            img1 {
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                grid-area: nosotros_img1;
+            }
+        
+            img2{
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                grid-area: nosotros_img2;
+            }
+        
+            img3{
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                grid-area: nosotros_img3;
+            }
+            
+                img{
+                    border-radius: 5px;
+                    width: 500px;
+                    height: 300px;
+                }
+        }
     }
 
   .nosotros_gallery .nosotros_img img {
@@ -634,10 +686,7 @@ footer .menu_footer {
     list-style-type: none;
     gap: 5px;
   }
-   
-  .navegacion_inicio {
-    width: 100px;
-  }
+  
 
   .encabezado {
       width: 100%;
@@ -691,9 +740,13 @@ footer .menu_footer {
     grid-area: box6;
   }
 
+  .nosotros_grid {
+    display: flex;
+    flex-direction: column;
+  }
+
   .nosotros_gallery {
     display: grid;
-    grid-template-columns: 100%;
     justify-content: center;
     grid-template-columns: 0.5fr;
     grid-template-rows: repeat(6, 0.1fr);
@@ -703,17 +756,50 @@ footer .menu_footer {
     "nosotros_img2" 
     "descripcion2" 
     "nosotros_img3" 
-    "descripcion3";
-  }
-  
-  .nosotros_gallery .nosotros_img img {
-    border-radius: 5px;
-    width: 200px;
-    height: 120px;
-    display: flex;
-  }
+    "descripcion3"
+    ;
 
-}
-  
+        .descripcion1 {
+            font-size: 15px;
+            padding-top: 20px;
+            grid-area: descripcion1;
+        }
+        
+        .descripcion2 {
+            font-size: 15px;
+            padding-top: 20px;
+            grid-area: descripcion2;
+        }
+        
+        .descripcion3{
+            font-size: 15px;
+            padding-top: 20px;
+            grid-area: descripcion3;
+        }
+        
+        .nosotros_img {
+            img1 {
+                display:flex;
+                grid-area: nosotros_img1;
+            }
+        
+            img2{
+                display:flex;
+                grid-area: nosotros_img2;
+            }
+        
+            img3{
+                display:flex;
+                grid-area: nosotros_img3;
+            }
+            
+                img{
+                    border-radius: 5px;
+                    width: 100px;
+                    height: 100px;
+                }
+    }
+  }
+} 
 
 /*# sourceMappingURL=estilo.css.map */

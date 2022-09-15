@@ -23,7 +23,7 @@
     li{
         a{
         text-decoration: none;
-        color: $secondaryColor;
+        color: white;
         }
     }
 }
@@ -49,7 +49,7 @@ h3{
     li { 
         a {
         text-decoration: none;
-        color: $secondaryColor;
+        color: white;
         }
     }
 }
@@ -59,7 +59,7 @@ h3{
 /* Body */
 
 .titulo{
-    color:$mainColor;
+    color: black;
     font-family: 'Ubuntu', sans-serif;
     background-image: url(../img/header.jpg);
     display: flex;
@@ -142,8 +142,8 @@ h3{
 
 
 footer{
-    background-color: $mainColor;
-    color:$secondaryColor;
+    background-color: black;
+    color: white;
     font-family: 'Ubuntu', sans-serif;
     padding-left: 20px;
     padding-top: 10px;
