@@ -31,10 +31,13 @@
   color: white;
 }
 
+.nav-item {
+  align-items: center;
+}
+
 .encabezado {
   display: flex;
   justify-content: center;
-  background-image: url(../img/header.jpg);
 }
 
 .navegación_inicio li a {
@@ -48,78 +51,66 @@
 }
 
 /* Body */
+.navbar-collapse {
+  justify-content: center;
+  font-size: 18px;
+}
+.navbar-collapse .navbar-nav .nav-item {
+  gap: 50px;
+}
+
 body {
   background-image: url(../img/header.jpg);
+  /* Pie */
 }
-
-.container {
-  width: 100%;
-  display: flex;
-  padding-block: 20px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-image: url(../img/header.jpg);
-  margin: 0;
-}
-.container .grid_gallery {
+body .container .grid_gallery {
   display: grid;
-  grid-template-columns: repeat(3, 5fr);
-  grid-template-rows: repeat(3, 5fr);
-  gap: 10px;
+  grid-template-rows: repeat(3, 200px);
+  grid-template-columns: repeat(3, 200px);
+  justify-content: center;
+  justify-items: center;
+  gap: 2rem;
+  padding-block: 2rem;
 }
-.container .img-box {
-  position: relative;
-}
-.container img {
+body .container img {
   border-radius: 5px;
-  width: 200px;
-  height: 200px;
   opacity: 0.7;
 }
-.container img:hover {
-  transform: scale(1.1) translateY(5px);
+body .container img:hover {
+  transform: scale(1.1);
   opacity: 1;
 }
-
-.img-box img {
+body .img-box img {
   width: 200px;
   height: 200px;
 }
-
-.container {
+body .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
-/* Pie */
-.navegacion_inicio {
+body .navegacion_inicio {
   background-color: black;
   color: white;
   padding-left: 20px;
-  padding-block: 10px;
   font-size: 15px;
   font-family: "Ubuntu", sans-serif;
 }
-.navegacion_inicio ul li {
+body .navegacion_inicio ul li {
   list-style-type: none;
 }
-.navegacion_inicio ul li a {
+body .navegacion_inicio ul li a {
   text-decoration: none;
   color: white;
 }
-
-footer {
-  background-color: black;
+body footer {
   color: white;
   font-family: "Ubuntu", sans-serif;
   padding-left: 20px;
   padding-top: 10px;
-  background-image: url(../img/header.jpg);
 }
-footer .menu_footer {
+body footer .menu_footer {
   list-style-type: none;
   display: flex;
   justify-content: center;
@@ -128,6 +119,16 @@ footer .menu_footer {
   gap: 30px;
 }
 
+@media screen and (max-width: 768px) {
+  body .container .grid_gallery {
+    grid-template-columns: 200px 200px;
+  }
+}
+@media screen and (max-width: 480px) {
+  body .container .grid_gallery {
+    grid-template-columns: 200px;
+  }
+}
 /* Encabezado */
 .menu2 {
   position: fixed;
@@ -177,12 +178,10 @@ h3 {
 .titulo {
   color: black;
   font-family: "Ubuntu", sans-serif;
-  background-image: url(../img/header.jpg);
   display: flex;
   justify-content: flex-start;
   font-size: 25px;
   padding-left: 20px;
-  padding-block: 15px;
 }
 
 .slide-top {
@@ -205,7 +204,6 @@ footer {
   font-family: "Ubuntu", sans-serif;
   padding-left: 20px;
   padding-top: 10px;
-  background-image: url(../img/header.jpg);
 }
 footer .menu_footer {
   list-style-type: none;
@@ -240,6 +238,10 @@ footer .menu_footer {
   color: white;
 }
 
+.body {
+  background-image: url(../img/header.jpg);
+}
+
 h3 {
   font-family: "Ubuntu", sans-serif;
   display: flex;
@@ -247,7 +249,6 @@ h3 {
   text-align: center;
   color: white;
   background-color: black;
-  padding-block: 10px;
   margin: 0;
 }
 
@@ -261,7 +262,6 @@ h3 {
   background-color: black;
   color: white;
   padding-left: 20px;
-  padding-block: 10px;
   font-size: 15px;
   font-family: "Ubuntu", sans-serif;
 }
@@ -283,22 +283,35 @@ h3 {
   font-family: "Ubuntu", sans-serif;
   padding-left: 20px;
   padding-bottom: 20px;
-  background-image: url(../img/header.jpg);
   font-size: 18px;
 }
 .ccontacto ul li {
   list-style-type: none;
 }
 
-.titulo-contacto {
-  background-color: grey;
+.titulo_contacto {
+  margin: 0;
   font-size: 25px;
-  padding-left: 20px;
+  padding: 10px 0 0 20px;
+  color: black;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h2 {
+  padding-left: 0px;
 }
 
 .formulario {
   padding: 0 10px 10px 20px;
-  background-image: url(../img/header.jpg);
+  margin: 0;
+  gap: 10px;
+}
+.formulario .accordion-button {
+  background-color: grey;
+  color: white;
 }
 
 footer {
@@ -307,7 +320,6 @@ footer {
   font-family: "Ubuntu", sans-serif;
   padding-left: 20px;
   padding-top: 10px;
-  background-image: url(../img/header.jpg);
 }
 footer .menu_footer {
   list-style-type: none;
@@ -373,77 +385,50 @@ h3 {
 .titulo {
   color: black;
   font-family: "Ubuntu", sans-serif;
-  background-image: url(../img/header.jpg);
   display: flex;
   justify-content: flex-start;
   font-size: 25px;
   padding-left: 20px;
-  padding-block: 15px;
+  padding-top: 20px;
+  margin: 0;
 }
 
-.nosotros_grid {
+.nosotros {
   display: flex;
-  flex-direction: row;
   padding: 10px 40px 30px 40px;
-  background-image: url(../img/header.jpg);
+  justify-content: center;
 }
-.nosotros_grid .nosotros_gallery {
-  display: grid;
-  grid-template-columns: repeat(2, 2fr);
-  grid-template-rows: repeat(3, 2fr);
-  grid-column-gap: 20px;
-  grid-template-areas: "nosotros_img1 descripcion1" "descripcion2 nosotros_img2" "nosotros_img3 descripcion3";
-}
-.nosotros_grid .nosotros_gallery .descripcion1 {
+.nosotros .descripcion1 {
   font-family: "Ubuntu", sans-serif;
   font-size: 15px;
-  padding-top: 20px;
-  grid-area: descripcion1;
+  padding: 10px 0 0 0;
 }
-.nosotros_grid .nosotros_gallery .descripcion2 {
-  font-family: "Ubuntu", sans-serif;
-  font-size: 15px;
-  padding-top: 20px;
-  grid-area: descripcion2;
-  padding-left: 10px;
-}
-.nosotros_grid .nosotros_gallery .descripcion3 {
-  font-family: "Ubuntu", sans-serif;
-  font-size: 15px;
-  padding-top: 20px;
-  grid-area: descripcion3;
-}
-.nosotros_grid .nosotros_gallery .nosotros_img img1 {
+.nosotros .nosotros_img {
   display: flex;
   justify-content: center;
   align-items: center;
-  grid-area: nosotros_img1;
 }
-.nosotros_grid .nosotros_gallery .nosotros_img img2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  grid-area: nosotros_img2;
-}
-.nosotros_grid .nosotros_gallery .nosotros_img img3 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  grid-area: nosotros_img3;
-}
-.nosotros_grid .nosotros_gallery .nosotros_img img {
+.nosotros .nosotros_img img {
   border-radius: 5px;
   width: 500px;
-  height: 300px;
+}
+
+.body {
+  background-image: url(../img/header.jpg);
+}
+
+.navbar-nav .navbar-center {
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
 }
 
 footer {
-  background-color: black;
+  background-image: url(../img/header.jpg);
   color: white;
   font-family: "Ubuntu", sans-serif;
   padding-left: 20px;
   padding-top: 10px;
-  background-image: url(../img/header.jpg);
 }
 footer .menu_footer {
   list-style-type: none;
@@ -453,7 +438,6 @@ footer .menu_footer {
   padding-block: 10px;
   gap: 30px;
 }
-
 
 /* Encabezado */
 .menu2 {
@@ -482,12 +466,10 @@ footer .menu_footer {
 .titulo {
   color: black;
   font-family: "Ubuntu", sans-serif;
-  background-image: url(../img/header.jpg);
   display: flex;
   justify-content: flex-start;
   font-size: 25px;
   padding-left: 20px;
-  padding-block: 15px;
 }
 
 .encabezado {
@@ -518,6 +500,8 @@ footer .menu_footer {
   align-items: center;
   list-style-type: none;
   gap: 40px;
+  flex-direction: column;
+  padding: 0;
 }
 
 h3 {
@@ -537,7 +521,6 @@ footer {
   font-family: "Ubuntu", sans-serif;
   padding-left: 20px;
   padding-top: 10px;
-  background-image: url(../img/header.jpg);
 }
 footer .menu_footer {
   list-style-type: none;
@@ -548,258 +531,11 @@ footer .menu_footer {
   gap: 30px;
 }
 
-/* Habilitar viewport y aplicación de media querie */
-/* Aplicación para tablet*/
-
 @media screen and (max-width: 768px) {
-
-  .menu2 {
-    width: 100px;
-    position: fixed;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    list-style-type: none;
-    gap: 5px;
-  }
-   
-  .encabezado {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      background-image: url(../img/header.jpg);
-  }
-
-  .container {
-    width: 100%;
-    display: flex;
-    padding-block: 20px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../img/header.jpg);
-  }
-
-  .grid_gallery .img-box img {
-    border-radius: 5px;
-    width: 140px;
-    height: 140px;
-  }
-  
-  .nosotros_grid {
-    display: flex;
+  .navegacion_videos .menu_videos {
     flex-direction: column;
   }
-
-  .nosotros_gallery {
-      display: grid;
-      grid-template-columns: 1fr;
-      justify-content: center;
-      grid-template-rows: repeat(6, 0.2fr);
-      grid-template-areas: 
-      "nosotros_img1" 
-      "descripcion1" 
-      "nosotros_img2" 
-      "descripcion2" 
-      "nosotros_img3" 
-      "descripcion3";
-
-      
-        .descripcion1 {
-            font-family: 'Ubuntu', sans-serif;
-            font-size: 15px;
-            padding-top: 20px;
-            grid-area: descripcion1;
-        }
-        
-        .descripcion2 {
-            font-family: 'Ubuntu', sans-serif;
-            font-size: 15px;
-            padding-top: 20px;
-            grid-area: descripcion2;
-            padding-left: 10px;
-        }
-        
-        .descripcion3{
-            font-family: 'Ubuntu', sans-serif;
-            font-size: 15px;
-            padding-top: 20px;
-            grid-area: descripcion3;
-        }
-        
-        .nosotros_img {
-            img1 {
-                display:flex;
-                justify-content: center;
-                align-items: center;
-                grid-area: nosotros_img1;
-            }
-        
-            img2{
-                display:flex;
-                justify-content: center;
-                align-items: center;
-                grid-area: nosotros_img2;
-            }
-        
-            img3{
-                display:flex;
-                justify-content: center;
-                align-items: center;
-                grid-area: nosotros_img3;
-            }
-            
-                img{
-                    border-radius: 5px;
-                    width: 500px;
-                    height: 300px;
-                }
-        }
-    }
-
-  .nosotros_gallery .nosotros_img img {
-      border-radius: 5px;
-      width: 100px;
-      height: 50px;
-      display: flex;
-    }
-
-  .menu_videos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    list-style-type: none;
-    gap: 40px;
+  .navegacion_videos .menu_videos iframe {
+    max-width: 100%;
   }
-}
-
-
-/* Aplicación para teléfono */
-@media screen and (max-width: 480px) {
-  .menu2 {
-    width: 100px;
-    position: fixed;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    list-style-type: none;
-    gap: 5px;
-  }
-  
-
-  .encabezado {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      background-image: url(../img/header.jpg);
-  }
-
-  
-  .grid_gallery{
-    display: grid;
-    grid-template-columns: 0.5fr;
-    grid-template-rows: repeat(6, 1fr);
-    gap: 5px;
-    grid-template-areas:
-    "box1"
-    "box2"
-    "box3"
-    "box4"
-    "box5"
-    "box6"
-  }
-
-  .grid_gallery .img-box img {
-    border-radius: 5px;
-    width: 100px;
-    height: 100px;
-  }
-  
-  .img-box box1 {
-    grid-area: box1;
-  }
-  
-  .img-box box2 {
-    grid-area: box2;
-  }
-  
-  .img-box box3 {
-    grid-area: box3;
-  }
-  
-  .img-box box4 {
-    grid-area: box4;
-  }
-  
-  .img-box box5 {
-    grid-area: box5;
-  }
-  
-  .img-box box6 {
-    grid-area: box6;
-  }
-
-  .nosotros_grid {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .nosotros_gallery {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 0.5fr;
-    grid-template-rows: repeat(6, 0.1fr);
-    grid-template-areas: 
-    "nosotros_img1" 
-    "descripcion1" 
-    "nosotros_img2" 
-    "descripcion2" 
-    "nosotros_img3" 
-    "descripcion3"
-    ;
-
-        .descripcion1 {
-            font-size: 15px;
-            padding-top: 20px;
-            grid-area: descripcion1;
-        }
-        
-        .descripcion2 {
-            font-size: 15px;
-            padding-top: 20px;
-            grid-area: descripcion2;
-        }
-        
-        .descripcion3{
-            font-size: 15px;
-            padding-top: 20px;
-            grid-area: descripcion3;
-        }
-        
-        .nosotros_img {
-            img1 {
-                display:flex;
-                grid-area: nosotros_img1;
-            }
-        
-            img2{
-                display:flex;
-                grid-area: nosotros_img2;
-            }
-        
-            img3{
-                display:flex;
-                grid-area: nosotros_img3;
-            }
-            
-                img{
-                    border-radius: 5px;
-                    width: 100px;
-                    height: 100px;
-                }
-    }
-  }
-} 
-
-/*# sourceMappingURL=estilo.css.map */
+}/*# sourceMappingURL=estilo.css.map */

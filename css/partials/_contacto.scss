@@ -28,6 +28,10 @@
     }
 }
 
+.body{
+    background-image: url(../img/header.jpg);
+}
+
 h3{
     font-family: 'Ubuntu', sans-serif;
     display: flex;
@@ -35,7 +39,6 @@ h3{
     text-align: center;
     color: white;
     background-color: black;
-    padding-block: 10px;
     margin: 0;
 }
 
@@ -49,7 +52,6 @@ h3{
     background-color: black;
     color: white;
     padding-left: 20px;
-    padding-block: 10px;
     font-size: 15px;
     font-family: 'Ubuntu', sans-serif;
 
@@ -72,7 +74,6 @@ h3{
     font-family: 'Ubuntu', sans-serif;
     padding-left: 20px;
     padding-bottom: 20px;
-    background-image: url(../img/header.jpg);
     font-size: 18px;
 
 
@@ -84,15 +85,32 @@ h3{
     }
 }
 
-.titulo-contacto{
-    background-color: black;
+
+
+.titulo_contacto{
+    margin: 0;
     font-size: 25px;
-    padding-left: 20px;
+    padding: 10px 0 0 20px;
+    color: black;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h2{
+    padding-left: 0px;
 }
 
 .formulario{
     padding: 0 10px 10px 20px;
-    background-image: url(../img/header.jpg);
+    margin: 0;
+    gap: 10px;
+
+    .accordion-button{
+        background-color: grey;
+        color: white;
+    }
 }
 
 footer{
@@ -101,7 +119,6 @@ footer{
     font-family: 'Ubuntu', sans-serif;
     padding-left: 20px;
     padding-top: 10px;
-    background-image: url(../img/header.jpg);
 
 
     .menu_footer{
